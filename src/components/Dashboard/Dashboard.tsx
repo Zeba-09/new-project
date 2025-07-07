@@ -3,7 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
 import Sidebar from './Sidebar';
 import Overview from './Overview';
-import Assessment from './Assessment';
+import UserAssessment from './Assessment';
 import TaraAI from './TaraAI';
 import Resources from './Resources';
 import Schedule from './Schedule';
@@ -22,7 +22,7 @@ const Dashboard: React.FC = () => {
       <main className="flex-1 p-8">
         <Routes>
           <Route path="/" element={<Overview />} />
-          <Route path="/assessment" element={<Assessment />} />
+          <Route path="/assessment" element={<UserAssessment />} />
           <Route path="/tara" element={<TaraAI />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/schedule" element={<Schedule />} />

@@ -5,7 +5,7 @@ import { mockAssessments } from '../../data/mockData';
 import { AssessmentConfig, AssessmentResponse, Assessment } from '../../types';
 import { CheckCircle, Clock, ArrowRight, ArrowLeft, Target } from 'lucide-react';
 
-const Assessment: React.FC = () => {
+const UserAssessment: React.FC = () => {
   const { user } = useAuth();
   const [selectedAssessment, setSelectedAssessment] = useState<AssessmentConfig | null>(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -342,4 +342,4 @@ const Assessment: React.FC = () => {
   );
 };
 
-export default Assessment;
+export default UserAssessment;
